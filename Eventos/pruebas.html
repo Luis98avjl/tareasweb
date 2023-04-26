@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evento Mouseout</title>
+	<style>
+		#miCuadro {
+			background-color: blue;
+			width: 200px;
+			height: 200px;
+			transition: background-color 0.5s ease-in-out;
+		}
+		#miCuadro:hover {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="miCuadro"></div>
+	<script>
+		document.getElementById("miCuadro").addEventListener("mouseout", function(){
+  			document.getElementById("miCuadro").style.backgroundColor = "blue";
+		});
+	</script>
+</body>
+</html>
